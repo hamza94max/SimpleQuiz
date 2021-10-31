@@ -1,28 +1,20 @@
 package school.alihamz.assignment2.Fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.util.Log
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import school.alihamz.assignment2.Models.ProblemModel
-import school.alihamz.assignment2.databinding.FragmentNewProblemBinding
-
-abstract class NewProblemFragment : Fragment() {
-
-    private var _binding : FragmentNewProblemBinding? = null
-    private val binding get() = _binding !!
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+import kotlinx.android.synthetic.main.fragment_new_problem.*
+import school.alihamz.assignment2.R
 
 
-    ): View? {
-        _binding = FragmentNewProblemBinding.inflate(layoutInflater, container, false)
-        binding.problem.setText("ProblemModel")
+class NewProblemFragment : Fragment(R.layout.fragment_new_problem) {
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        return binding.root
+        submit_answer.setOnClickListener {
+            Log.i("tag", "done !")
+        }
     }
 }

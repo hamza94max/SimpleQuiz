@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import school.alihamz.assignment2.R
+import school.alihamz.assignment2.databinding.FragmentInputErrorBinding
 
 
 class InputErrorFragment : Fragment() {
+
+    private var _binding: FragmentInputErrorBinding? = null
+    private val binding get() = _binding!!
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +22,10 @@ class InputErrorFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_input_error, container, false)
+    ): View {
+        _binding = FragmentInputErrorBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
 }
