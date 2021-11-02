@@ -3,21 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/newproblemFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/newproblemFragment"
         android:name="school.alihamz.assignment2.Fragments.NewProblemFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_new_problem">
         <action
-            android:id="@+id/action_homeFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_NewProblemFragment_to_rightFragment"
+            app:destination="@id/rightanswerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_wrongAnswerFragment"
+            app:destination="@id/wrongAnswerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
-        android:id="@+id/loginFragment"
+        android:id="@+id/rightanswerFragment"
         android:name="school.alihamz.assignment2.Fragments.RightAnswerFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_right_answer" />
+        android:label="fragment_rightanswer"
+        tools:layout="@layout/fragment_right_answer">
+        <action
+            android:id="@+id/action_rightanswerFragment_to_newproblemFragment"
+            app:destination="@id/newproblemFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/wrongAnswerFragment"
+        android:name="school.alihamz.assignment2.Fragments.WrongAnswerFragment"
+        android:label="WrongAnswerFragment">
+        <action
+            android:id="@+id/action_wrongAnswerFragment_to_seeAnswerFragment"
+            app:destination="@id/seeAnswerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="result"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/seeAnswerFragment"
+        android:name="school.alihamz.assignment2.Fragments.SeeAnswerFragment"
+        android:label="SeeAnswerFragment">
+        <argument
+            android:name="result"
+            app:argType="integer" />
+    </fragment>
 </navigation>

@@ -8,18 +8,23 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="newproblemFragmentm">
+                  <entry key="newproblemFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1583" />
-                            <option name="y" value="-59" />
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="actionNewFragmentToRightFragment">
+                            <entry key="action_NewProblemFragment_to_rightFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_homeFragment_to_wrongAnswerFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -29,13 +34,46 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="rightAnswerFragment">
+                  <entry key="rightanswerFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1019" />
-                            <option name="y" value="-136" />
+                            <option name="x" value="305" />
+                            <option name="y" value="-228" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_rightanswerFragment_to_newproblemFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="seeAnswerFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="773" />
+                            <option name="y" value="251" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="wrongAnswerFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="305" />
+                            <option name="y" value="257" />
                           </Point>
                         </option>
                       </LayoutPositions>

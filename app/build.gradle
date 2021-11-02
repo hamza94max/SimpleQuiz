@@ -1,9 +1,7 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id  'kotlin-kapt'
-    id 'kotlin-android-extensions'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdk 30
@@ -44,7 +42,6 @@ dependencies {
 
 
 
-    implementation 'androidx.fragment:fragment-ktx:1.3.6'
 
     // Navigation Component dependencies
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
