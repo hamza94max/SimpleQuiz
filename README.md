@@ -4,25 +4,25 @@ Simple quiz using Navigation component
 
 <div>
 
-<img src = "https://user-images.githubusercontent.com/54688005/140304670-fb91c51b-e9cb-45bd-a90d-99c047b8dd55.PNG" width = 50%>
+<img src = "https://user-images.githubusercontent.com/54688005/140320708-906d561f-7ec2-4b6c-ad28-bb299e99096e.png" width = 40%>
   <img width ="20%"/> 
 </div>
 
 
 <div>
 
-  <img src = "https://user-images.githubusercontent.com/54688005/140304681-9d3c0dd7-6dac-4b1d-aa16-e77dca27e846.PNG" width = 35%>
+  <img src = "https://user-images.githubusercontent.com/54688005/140320726-0c80293f-3476-4834-8468-3d502a88d83c.png" width = 35%>
     <img width ="5%"/> 
-  <img src = "https://user-images.githubusercontent.com/54688005/140304696-f70d0a56-c6a0-446a-a008-62d51a4fa147.PNG" width = 35%>
+  <img src = "https://user-images.githubusercontent.com/54688005/140320731-6ed80ce6-4cc7-4527-b2c4-e5d58d5de205.png" width = 35%>
   </div>
 
 </div>
 
 <div>
 
-  <img src = "https://user-images.githubusercontent.com/54688005/140304702-24c978d6-e8eb-4a24-895e-92fd024aa3a8.PNG" width = 35%>
+  <img src = "https://user-images.githubusercontent.com/54688005/140320743-89b3aee4-cddb-4cd6-bb7c-53623eb77391.png" width = 35%>
     <img width ="5%"/> 
-  <img src = "https://user-images.githubusercontent.com/54688005/140304704-c13d4498-5576-4121-9b01-96b442fcc671.PNG" width = 35%>
+  <img src = "https://user-images.githubusercontent.com/54688005/140320750-1c1d014d-a37c-4303-b14a-a45c0a84dbb3.png" width = 35%>
   </div>
 
 
