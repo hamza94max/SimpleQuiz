@@ -26,14 +26,15 @@
               android:padding="7dp"
               android:text=""
               android:textColor="#02354C"
-              android:textSize="25sp" />
+              android:textSize="28sp" />
 
           <EditText
               android:id="@+id/resulteditText"
-              android:layout_width="75dp"
+              android:layout_width="78dp"
               android:layout_height="65dp"
+              android:inputType="number"
+              android:maxLines="1"
               android:layout_above="@+id/submit_answer"
-              android:layout_alignEnd="@+id/submit_answer"
               android:layout_centerInParent="true"
               android:padding="7dp" />
 

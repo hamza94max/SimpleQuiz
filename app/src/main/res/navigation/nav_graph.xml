@@ -44,6 +44,7 @@
     <fragment
         android:id="@+id/wrongAnswerFragment"
         android:name="school.alihamz.assignment2.Fragments.WrongAnswerFragment"
+        tools:layout="@layout/fragment_wrong_answer"
         android:label="WrongAnswerFragment">
         <action
             android:id="@+id/action_wrongAnswerFragment_to_seeAnswerFragment"
@@ -55,14 +56,21 @@
         <argument
             android:name="result"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_wrongAnswerFragment_to_newproblemFragment"
+            app:destination="@id/newproblemFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/seeAnswerFragment"
         android:name="school.alihamz.assignment2.Fragments.SeeAnswerFragment"
+        tools:layout="@layout/fragment_see_answer"
         android:label="SeeAnswerFragment">
         <argument
             android:name="result"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_seeAnswerFragment_to_newproblemFragment"
+            app:destination="@id/newproblemFragment" />
     </fragment>
 </navigation>

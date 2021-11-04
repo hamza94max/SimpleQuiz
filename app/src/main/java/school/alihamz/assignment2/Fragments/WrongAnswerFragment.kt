@@ -2,7 +2,6 @@ package school.alihamz.assignment2.Fragments
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -17,8 +16,6 @@ class WrongAnswerFragment : Fragment(R.layout.fragment_wrong_answer) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         seeAnswerbtn.setOnClickListener {
             val action =
                 WrongAnswerFragmentDirections.actionWrongAnswerFragmentToSeeAnswerFragment(args.result)
@@ -26,11 +23,8 @@ class WrongAnswerFragment : Fragment(R.layout.fragment_wrong_answer) {
         }
 
         tryagainbtn.setOnClickListener {
-            Toast.makeText(context, "try again ", Toast.LENGTH_LONG).show()
+            findNavController().popBackStack()
         }
 
-
     }
-
-
 }
